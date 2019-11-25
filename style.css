@@ -1,12 +1,29 @@
 .fake-box {
-    position: relative;
+  position: absolute;
+  width: 420px;
+  height: 320px;
+  border: 1.5px solid #000;
+  margin: 1rem;
+  padding: 6px;
 }
 
-.fake-box:before, .fake-box:after {
-    position: absolute;
+.fake-box::after {
+  content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eius soluta, vitae officiis magnam ex harum,voluptas placeat suscipi dolorem beatae dolore tempore ! Repudiandae quasi id provident voluptatibus deleniti reiciendis?";
+  position: absolute;
+  width: 420px;
+  height: 320px;
+  margin: 1rem;
+  padding: 6px;
+  border: 1.5px solid #000;
 }
-
-.fake-box:after {
-    left: 20px;
-    top: 20px;
+.info-box {
+  float: left;
+  left: 10px;
+  width: 280px;
+  height: 100px;
+  padding: 30px;
+  margin: 1rem;
+  margin-top: 500px;
+  border: 1px solid rgb(20, 18, 18);
+  box-shadow: 12px 12px 1px 1px rgb(90, 89, 89);
 }
